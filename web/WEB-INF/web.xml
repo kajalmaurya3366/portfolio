@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+   <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>CreateForm</servlet-name>
+        <servlet-class>com.portfolio.CreateForm</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>CreateForm</servlet-name>
+        <url-pattern>/CreateForm</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+    
+   <multipart-config>
+        <max-file-size>10000000</max-file-size>
+        <!-- 10MB -->
+        <max-request-size>10000000</max-request-size>
+        <!-- 10MB -->
+        <file-size-threshold>102400</file-size-threshold>
+        <!-- 100KB -->
+    </multipart-config>
+    
+    
+    
+    <dependency>
+        <groupId>com.oracle</groupId>
+        <artifactId>ojdbc6</artifactId>
+        <version>11.2.0</version>
+        <!-- Update to the version you found -->
+    </dependency>
+    
+</web-app>

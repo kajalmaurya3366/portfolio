@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+NO:wght@100..400&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
+
+}
+
+/* =================sidebar Properties start ===================*/
+
+.sidebar{
+    width:20%;
+    height:100vh;
+    position:fixed;
+    border-right:5px solid whitesmoke;
+}
+.logo{
+    margin-top:75px;
+    display:inline;
+    font-size: 28px;
+    display:flex;
+    justify-content: center;
+    display:relative;
+}
+.span1{
+    padding-top:5px;
+}
+.logo .span1{
+    position:relative;
+}
+.logo  a{
+    padding:12px 30px;
+    letter-spacing: 3px;
+    color:black;
+    text-decoration: none;
+}
+.logo a span{
+    font-family: "Style Script", cursive;
+}
+ .logo .span1::before{
+    content:"";
+    height:20px;
+    width:20px;
+    border-left: 5px solid darkgreen;
+    border-bottom: 5px solid darkgreen;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.logo .span1::after{
+    content:"";
+    height:20px;
+    width:20px;
+    border-top: 5px solid darkgreen;
+    border-right: 5px solid darkgreen;
+    position:absolute;
+    top:0;
+    right:0;
+}
+.sidebar .nav{
+    margin-top:80px;
+    margin-left:100px;
+    list-style: none;
+    display: inline-block;
+}
+.nav li{ 
+    margin-bottom:20px;
+    padding:10px;
+    font-size: 19px;
+    border-bottom: 2px solid rgb(227, 223, 223);
+}
+.nav li a{
+    text-decoration: none;
+    list-style: none;
+    color:black;
+    font-weight: 500;
+}
+.nav li a i{
+    margin-right:10px;
+}
+.nav li .active{
+    color:darkgreen;
+}
+
+
+
+/*===============sidebar properties end==================*/
+
+
+
+/*=============== home section  properties start==============*/
+.section{
+    width:80%;
+    min-height:100vh;
+    left:20%;
+    position:relative;
+    margin-bottom: 20px;
+}
+ .home{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.details{
+    width: 90%;
+    padding:10px;
+    display:flex;
+}
+.home-info {
+    width:60%;
+    padding:10px;
+}
+.my-name{
+    margin-bottom:30px;
+    font-size: 25px;
+}
+.my-name span{
+    color:darkgreen;
+    font-size: 29px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 10px;
+}
+.profession {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+.profession span{
+    color:darkgreen;
+    font-size: 34px;
+    font-family: "Poppins", sans-serif;
+    margin-left:10px;
+}
+.indetail{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+}
+ .btn1{
+    padding:10px 15px;
+    font-size: 14px;
+    background: rgb(2, 87, 2);
+    outline: none;
+    margin-top: 20px;
+    border:none;
+    text-decoration: none;
+    color:white;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    display: inline-block;
+    margin-bottom: 30px;;
+    cursor:pointer;
+}
+ .btn1:hover{
+    transform:scale(1.05);
+}
+.home-img{
+    width:40%;
+    margin-left:30px;
+    text-align: center ;
+    position: relative;
+}
+.home-img img{
+      height:400px;
+}
+.home-img::before{
+    content:"";
+    height:50px;
+    width:50px;
+    border-left:7px solid darkgreen;
+    border-top: 7px solid darkgreen;
+    position:absolute;
+    left:50px;
+    top:-25px;
+}
+.home-img::after{
+    content:"";
+    height:50px;
+    width:50px;
+    border-right:7px solid darkgreen;
+    border-bottom: 7px solid darkgreen;
+    position:absolute;
+    right:50px;
+    bottom:-25px;
+}
+
+/* ============ home  properties end =============  */
+
+
+/* =============About section properties Start ==============  */
+.row{
+    width:90%;
+    padding-top:20px;
+    margin:0px  auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+.page-title h2{
+    font-size: 30px;
+    font-weight: 500;
+    position:relative;
+    padding-bottom:10px;
+    margin-bottom: 30px;
+}
+.page-title h2::after{
+    content:"";
+    width:60px;
+    height:4px;
+    background: darkgreen;
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-bottom:8px;
+}
+.page-title h2::before{
+    content:"";
+    width:40px;
+    height:4px;
+    background: darkgreen;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.about-me{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:100%;
+}
+.box-title{
+    font-size: 13px;
+    color:darkgreen;
+    margin:11px 0px;
+    padding:5px 0px;
+}
+.box-title h2{
+    font-weight: 500;
+}
+.personal{
+    width:50%;
+    padding: 30px;
+    margin-bottom:30px;
+}
+.detail-item{
+    width:100%;
+    height:30px;
+    display: flex;
+    justify-content: space-between;
+}
+.detail-item h4{
+    font-size: 16px;
+    font-weight: 600;
+    margin-right:20px;
+}
+.detail-item p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.skills-detail{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.skill-item{
+    width:80px;
+    text-align: center;
+    padding:10px;
+    margin:5px;
+    transition:transform .5s;
+    cursor:pointer;
+}
+.skill-item img{
+    width:100%;
+}
+.skill-item h3{
+    font-size: small;
+}
+.skill-item:hover{
+    transform:translateY(-15px);
+    border-bottom: 2px solid rgb(227, 223, 223);
+}
+.edu-details{
+    position: relative;
+    margin-left:20px;
+    margin-top:30px;
+}
+.edu-date{
+    font-size: 14px;
+    font-weight: 300;
+}
+.edu-date i {
+    padding-right:10px;
+    font-size: 14px;
+}
+.edu-title, .edu-text{
+    font-weight: 600;
+    padding-left: 24px;
+    font-size: 14px;
+    
+}
+.edu-text{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+}
+.edu-item {
+    padding-left:30px;
+    margin-bottom:10px;
+}
+.edu-item::before{
+    content:"";
+    width:3px;
+    height:100%;
+    background: darkgreen;
+    left:5px;
+    top:0;
+    position:absolute;
+}
+.circle-dot{
+    width:13px;
+    height:13px;
+    border-radius: 50%;
+    background: darkgreen;
+    left:0;
+    position:absolute;
+}
+
+/* ============= about properties End ==============*/
+
+
+/* ============= my-project properties start ==============*/
+
+.my-work{
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+   display: flex;
+   flex-wrap: wrap;
+}
+.project-item{
+    width: 28%;
+    margin:40px 20px;
+    background: rgb(237, 235, 235);
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  transition: transform .4s;
+  border-radius: 10px;
+  box-shadow:3px 5px 25px rgb(212, 208, 208);
+}
+.project-item a{
+    text-decoration: none;
+    color:black;
+    display: block;
+}
+.p-name{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.project-item p{
+    font-size: 13px;
+    font-weight: 400;
+    text-align:justify;
+    margin-bottom: 15px;
+}
+.project-item img{
+    background: #c7c3c3;
+}
+.project-item:hover{
+    transform: translateY(-15px);
+}
+
+
+/* =========== my-project properties end=============== */
+
+
+
+/* ============contact properties start===============*/
+
+.form-container{
+    padding:10px 0px;
+    display:flex;
+    justify-content: center;
+}
+.form{
+    width: 50%;
+    padding:30px;
+    border:2px solid rgb(87, 85, 85);
+    border-radius: 7px;;
+}
+.text-box
+{
+    width:45%;
+    font-size: 15px;
+    text-indent: 5px;
+    padding:8px;
+    outline:none;
+    border:none;
+    margin-bottom:20px;
+    background: rgb(241, 241, 241);  
+}
+.email input{
+    width:100%;
+    background: rgb(241, 241, 241);  
+}
+.form-container .form textarea{
+    width:100%;
+    height:80px;
+}
+.form form div 
+{
+    display:flex;
+    justify-content: space-between;
+}
+.form-container input:focus{
+    border-bottom: 2px solid darkgreen;
+}
+.form-container textarea:focus{
+    border-bottom: 2px solid darkgreen;
+}
+.form button{
+    width:100%;
+    margin-top:15x;
+   font-size: 15px;
+   padding:10px 0px;
+   cursor:pointer;
+   outline:none;
+   background:rgb(5, 137, 5);
+   border:none;
+   color:white;
+   transition: transform .4s;
+   border-radius:5px;
+}
+.form button:hover{
+   transform: translateY(-3px);
+}
+.social-links{
+    padding:10px 0px;
+    margin-top:20px;
+    display:flex;
+    justify-content: center;
+}
+.social-links div{
+    font-size: 35px;
+    padding:10px;
+    cursor:pointer;
+    margin-right:20px;
+    transition: transform .4s;
+}
+.social-item a i{
+    color: rgb(117, 116, 116);  
+}
+.social-item a i:hover{
+    transform: rotate(340deg); 
+}
+
+/*==========contact section properties end=============*/
+
+
+
+/*============create-form properties start =============*/
+
+.form-container form{
+    width:100%;
+}
+.input-item{
+    width:100%;
+    padding:10px;
+    border-bottom:3px solid lightgrey;
+    margin-bottom: 10px;
+}
+.form-container textarea{
+    width:90%;
+}
+.input-item  textarea,
+.input-item input{
+    width:80%;
+}
+.file{
+    width:80%;
+    padding:10px;
+    background: rgb(241, 241, 241); 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:10px;
+    color:rgb(132, 130, 130)
+}
+
+.file input{
+    width:50%;
+}
+
+
+/* ================create-from Properties end=============== */
+
+/* ================responsive code start =============== */
+
+@media (max-width:1515px) {
+    .sidebar{
+        left:-20%;
+        display:none;
+    }
+    .about,
+    .my-project,
+    .create-form,
+    .contact,
+    .home{
+        left:0%;
+        margin:0px;
+        width:100%;
+        flex:0 0 100%;
+    }
+}
+
+
+@media(max-width:1141px){
+    .home-img img{
+        width:200px;
+        height:300px;
+    }
+    .home-img::before{
+        content:"";
+        height:50px;
+        width:50px;
+        border-left:7px solid darkgreen;
+        border-top: 7px solid darkgreen;
+        position:absolute;
+        left:30px;
+        top:-25px;
+    }
+    .home-img::after{
+        content:"";
+        height:50px;
+        width:50px;
+        border-right:7px solid darkgreen;
+        border-bottom: 7px solid darkgreen;
+        position:absolute;
+        right:30px;
+        bottom:30px;
+    
+    }
+
+}
+
+
+@media (max-width:942px){
+    .home-img {
+        display:none;
+    }
+    .home .home-info {
+        flex:0 0 100%;
+    }
+    .project-item{
+        width:40%;
+        margin: 30px auto;    
+    }
+
+    .your-project,
+     .basic-detail{
+        display: flex;
+        flex-direction: column;
+    } 
+    .your-project input,
+    .your-project textarea,
+    .your-project span,
+    .scl-10 input,
+    .scl-10 textarea,
+    .scl-12 input,
+    .scl-12 textarea,
+     .clg input,
+     .clg textarea,
+     .basic-detail textarea,
+     .basic-detail div,
+    .basic-detail input{
+        width:100%;
+    }
+    .your-project span,
+    .basic-detail span{
+        display: block;
+        width:100%;
+    }
+    .your-project span,
+    .basic-detail span {
+        display:flex;
+    }
+     
+    .your-project span p,
+    .basic-detail span p{
+        width:300px;
+    } 
+    .your-project .file{
+        width:100%;
+        
+    }
+  
+}
+
+
+@media(max-width:720px){
+    .home-info .my-name span{
+        font-size: 20px;
+    }
+   .personal{
+    width:100%;
+   }
+   .project-item{
+    width:70%;
+    margin:30px auto;    
+   }
+  
+   .form{
+    width:70%;
+   }
+   
+  
+}
+
+
+@media (max-width:509px){
+    .home-info h2{
+        font-size: 18px;
+    }
+    .home .profession{
+        font-size: 18px;
+    }
+    .home .profession span{
+        font-size: 20px;
+    }
+    .personal{
+        padding:0px;
+    }
+    .personal .detail-item{
+        width:100%;
+    }
+    .personal .detail-item h4 p{
+        font-size: 14px;
+       }
+       .project-item{
+        width:90%;
+        margin:40px auto;        
+    }
+    .form{
+        width:100%;
+       }
+   
+
+
+   
+}
+
+
+
